@@ -11,7 +11,7 @@
         btnAlign: 'c',
         area: ['420px', '430px'],
         skin: 'qrcode-dialog',
-        title: '请使用微信扫码下载',
+        title: '请使用微信扫码获取下载地址',
         btn: ['我已扫码并确认'],
         success: function(layero, index) {
           $down.animate({opacity: 0});
