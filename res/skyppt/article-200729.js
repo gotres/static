@@ -30,6 +30,7 @@
           var sendData = {action: 'checkSceneQrcode', data: scene};
           $.getJSON(window.location.href, sendData, function(res) {
             if (res.errcode) {
+              $down.animate({opacity: 1});
               return layer.msg(res.errmsg || '操作失败');
             }
             if (res.data) {
