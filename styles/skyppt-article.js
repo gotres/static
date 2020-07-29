@@ -1,4 +1,6 @@
   $(function() {
+    if (!window.scene) return;
+    var qrcode = '/scene/' + scene + '.png';
     $('span.down').click(function(){
       var $down = $('span.down');
       var $img = $('<img>').addClass('scene-qrcode').attr({
